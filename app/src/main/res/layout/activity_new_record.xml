@@ -7,4 +7,66 @@
         android:layout_height="match_parent"
         tools:context=".NewRecord">
 
+    <TextView
+            android:text="@string/milage"
+            android:layout_width="105dp"
+            android:layout_height="42dp"
+            android:id="@+id/mileageTitle2" android:textAlignment="center" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/gallonsFiled"
+            android:textSize="24sp"/>
+    <TextView
+            android:text="New Record"
+            android:layout_width="166dp"
+            android:layout_height="53dp"
+            android:id="@+id/newRecordTitle" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" android:textStyle="bold" android:textAlignment="center"
+            android:textSize="30sp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout"/>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="181dp"
+            android:layout_height="149dp" tools:layout_editor_absoluteY="229dp"
+            android:id="@+id/textInputLayout" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="179dp"
+                android:layout_height="125dp"
+                android:textAlignment="center" android:id="@+id/milageInput" android:inputType="number"
+        />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="181dp"
+            android:layout_height="141dp"
+            android:id="@+id/gallonsFiled"
+            android:layout_marginTop="72dp" app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+        />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+            android:text="Button"
+            android:layout_width="153dp"
+            android:layout_height="62dp"
+            android:id="@+id/calculate"
+            app:layout_constraintTop_toBottomOf="@+id/gallonsFiled" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintVertical_bias="0.769"/>
+    <TextView
+            android:text="gl Filled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/newRecordTitle"
+            android:textSize="24sp"/>
 </android.support.constraint.ConstraintLayout>

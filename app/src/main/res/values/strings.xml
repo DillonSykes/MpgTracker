@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">MpgTracker</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="new_record">New Record</string>
     <string name="mpgtracker">MpgTracker</string>
     <string name="history">History</string>
     <string name="milage">milage</string>
+    <string name="calculate">Calculate</string>
+    <string name="gl_filled">gl Filled</string>
+    <string name="new_record">New Record</string>
 </resources>
